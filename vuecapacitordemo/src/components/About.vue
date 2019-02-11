@@ -7,6 +7,8 @@
     </ion-title>
   </ion-toolbar>
 </ion-header>
+
+<ion-button @click="goBackHome()" full>Go back!</ion-button>
 <ion-content padding>
 This is the about page.
 </ion-content>
@@ -15,9 +17,12 @@ This is the about page.
 
 <script>
 export default {
-  name: 'About'
+  name: 'About',
+  methods: {
+    goBAckHome() {
+      this.$router.push('/')
+    },
+  } 
 }
-
-
 
 </script>

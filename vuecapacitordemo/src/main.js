@@ -6,7 +6,7 @@ import About from './components/About.vue'
 
 Vue.use(Router)
 
-const Router = new Router({
+const router = new Router({
   routes: [
     {
       path: '/',

@@ -8,6 +8,7 @@
   </ion-toolbar>
 </ion-header>
 
+<ion-button @click="goToAbout" full>Go to About</ion-button>
 <ion-content padding>
   The world is your oyster.
   <p>
@@ -19,6 +20,11 @@
 
 <script>
 export default {
-  name: 'Home'
+  name: 'Home',
+  methods: {
+    goToAbout() {
+      this.$router.push('about')
+    },
+  }
 }
 </script>
